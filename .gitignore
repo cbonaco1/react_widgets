@@ -5,3 +5,7 @@ hello_world_app/bundle.js
 #Ignore node-modules and bundle file in Widgets
 widgets/node_modules/*
 widgets/bundle.js
+
+#Ignore node-modules and bundle file in Minesweeper
+minesweeper/node_modules/*
+minesweeper/bundle.js
