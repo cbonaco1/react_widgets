@@ -21,7 +21,7 @@ var Autocomplete = React.createClass({
     if (this.state.searchString.length > 0){
       names.map(function(n){
         if (n.toLowerCase().startsWith((this.state.searchString).toLowerCase())) {
-          matches.push(n);
+          matches.push(<li key={n} onClick={this.handleClick}>{n}</li>);
         }
       }.bind(this)
 
@@ -31,10 +31,7 @@ var Autocomplete = React.createClass({
       <div>
         <input type="text" value={this.state.searchString} onChange={this.handleChange}/>
         <ul>
-          { matches.map(function (n){
-            return <li key={n} onClick={this.handleClick}>{n}</li>;
-          }.bind(this))
-        }
+          { matches }
         </ul>
       </div>
     );
