@@ -1,3 +1,7 @@
-#Ignoring node_modules and bundle file
+#Ignoring node_modules and bundle file in Hello World
 hello_world_app/node_modules/*
 hello_world_app/bundle.js
+
+#Ignore node-modules and bundle file in Widgets
+widgets/node_modules/*
+widgets/bundle.js
