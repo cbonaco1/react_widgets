@@ -1,0 +1,3 @@
+#Ignoring node_modules and bundle file
+hello_world_app/node_modules/*
+hello_world_app/bundle.js
